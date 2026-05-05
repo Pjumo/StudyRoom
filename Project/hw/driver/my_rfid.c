@@ -136,7 +136,7 @@ uint8_t rfidGetVersion(void)
     return rc522ReadReg(REG_VERSION);
 }
 
-/* 카드 통신 핵심 */
+/* 카드 통신 */
 static rfid_status_t rc522ToCard(uint8_t cmd,
                                  uint8_t *send_data,
                                  uint8_t send_len,
